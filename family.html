@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUNII bittersweetsoul</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+        #topButton {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* 20px from the bottom */
+            right: 30px; /* 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #555; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #topButton:hover {
+            background-color: #000; /* Darker background on hover */
+        }
+    </style>
+
+</head>
+<body>
+     <header>
+        <nav>
+            <div class="logo">
+                 <a href="index.html"><img src=image/header.png width="100%" height="65%" alt="logo"></a>
+              <body> 
+
+
+    
+            </div>
+              
+
+<div class="navbar">
+<center>
+  <a href="home.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="education.html">Education</a>
+  <div class="dropdown">
+    <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+                            <div class="dropdown-content">
+                            <a href="family.html">Family</a>
+                            <a href="friends.html">Friends</a>
+                            <a href="unifriends.html">University Friends</a>
+                            <a href="things.html">Things that I likes</a>
+                            <a href="gallery.html">Gallery</a>
+    </div>
+  </div>
+</div>
+</center>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+<center>
+<section class="video-section">
+        <h3>"Family is where life begins and love never ends." - Unknown</h3>
+        <video width="1000" controls>
+            <source src="video/family.mp4" type="video/mp4">
+            
+        </video>
+    </section>
+</center>
+
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ABOUT MY FATHER [MR. DAHLAN]</h1>
+            <img src="image/abah.jpg" alt="Father" style="width: 10%; height: 20%;">
+            <p>Dahlan is a man of calm strength and great understanding, and those who know him hold him in respect. He has always been an icon of strength and unbreakable stability for his family. Dahlan has a strong work ethic and an unwavering passion to providing and caring for his loved ones, ensuring that they have all they need to succeed. His calm attitude and intelligent response to challenges in life set a good example for his children, teaching them the importance of determination, integrity, and responsibility. Dahlan's capacity to remain collected under pressure, as well as his gift for finding practical answers to issues, reflect his extraordinary character. </p>
+
+<h1>ABOUT MY MOTHER [MRS. SHAMSUL BARIAH]</h1>
+<img src="image/ibu.jpg" alt="Mother" style="width: 10%; height: 20%;">
+<p>Shamsul Bariah is a lady of incredible strength and limitless love, showing dedication and compassion. Her warm smile and kind nature have the ability to brighten any environment, providing a place of comfort and delight to all around her. Shamsul Bariah's commitment to her family is extremely amazing, whether she's dealing with life's everyday hardships gracefully or providing unwavering support to loved ones. Her knowledge, kindness, and tireless patience define her as more than simply a mother she is an inspiration and treasured presence in the lives she touches. Aside from her caring function, Shamsul Bariah is a woman of outstanding skill and commitment.</p>
+
+<h1>ABOUT MY OLDER SISTER [MISS AMALIA]</h1>
+<img src="image/kakak.jpg" alt="Sister" style="width: 10%; height: 20%;">
+<p>Amalia is a force of nature, characterised by her stubborn resolve and unlimited compassion. As the older sister, she has always played the role of guardian and mentor with admirable elegance and determination. Amalia's brilliance and ingenuity show through, whether she's solving problems at work, following her interests, or advising her younger siblings. Her ability to handle various duties and transform challenges into opportunities are extremely inspirational. Amalia's strength is not just her capacity to persist, but also her readiness to help people around her, offering a steady hand and a reassuring presence in times of need. Aside from her outstanding accomplishments and unwavering ambition, Amalia is genuinely sensitive and loving. </p>
+
+<h1>ABOUT MY OLDER BROTHER [MR. AIMAN]</h1>
+<img src="image/abang.jpg" alt="Brother" style="width: 10%; height: 20%;">
+<p>Aiman represents stability and calm strength, and he is an inspiration in the family. As the oldest brother, he continually showed an impressive combination of leadership and compassion, leading his younger siblings with responsibility and care. Aiman's calm manner and level-headedness make him the go to guy in times of crisis, as he has a natural capacity to examine circumstances calmly and give sensible advise. His commitment to his family is unshakeable he frequently prioritizes their needs above his own and works diligently to secure their well-being and happiness. Aiman's personal and professional successes demonstrate his hard work, intelligence, and determination, making him an inspiration and source of pride for everyone around him.</p>
+        </div>
+    </section>
+   
+<center>
+ <section class="Family">
+    <h2>MY BIG PRECIOUS FAMILY</h2>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="image/family1.jpg" style="width:65%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="image/family3.jpg" style="width:65%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="image/family4.png" style="width:65%">
+    </div>
+</center>
+
+  <br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+        <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+   
+    <footer>
+<center>
+        <p>&copy; 2024 AYUNII bittersweetsoul. All Rights Reserved.</p>
+</center>
+    </footer>
+
+
+    <script src="scripts.js">
+ <script src="scripts.js">
+
+ // Scroll to top function
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+// Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+     </script>
+</body>
+</html>

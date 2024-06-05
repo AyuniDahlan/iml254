@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUNII bittersweetsoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #topButton {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* 20px from the bottom */
+            right: 30px; /* 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #555; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #topButton:hover {
+            background-color: #000; /* Darker background on hover */
+        }
+
+.gallery {
+  max-width: 5000px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="image/header.png" width="100%" height="65%" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <center>
+                    <a href="home.html">Home</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="education.html">Education</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">More
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="family.html">Family</a>
+                            <a href="friends.html">Friends</a>
+                            <a href="unifriends.html">University Friends</a>
+                            <a href="things.html">Things that I likes</a>
+                            <a href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<div class="gallery">
+    <div class="grid-container">
+<center>
+<h1>GALLERY OF BEAUTIFUL MOMENTS</h1>
+</center>
+      <!-- Images will be dynamically added here -->
+    </div>
+      
+      <section class="hero">
+        <div class="hero-content">
+            <h1>Gallery of Beautiful Memories</h1>
+            <p>Beautiful memories with family and friends are the treasured moments that light up our lives and warm our hearts. These memories are the cherished snippets of time spent with the people who matter most, filled with love, laughter, and a deep sense of connection. The bond of family creates a unique tapestry of memories that span generations. From the innocence of childhood to the wisdom of old age, family memories are marked by shared experiences and unconditional love.</p>
+
+<p>Beautiful memories with family and friends are more than just events; they are the emotions and connections that accompany those events. They are the sense of belonging, the shared happiness, and the love that binds us together. These memories are the milestones of our emotional landscape, markers of the times when life felt particularly vibrant and meaningful. Beautiful memories with family and friends are the jewels of our lives, reflecting the light of love, joy, and companionship. They are the moments we return to in our minds, the stories we tell again and again, and the foundation upon which we build our sense of self and connection to others. In the end, these memories are the true measure of a life well-lived, a testament to the power of human relationships and the enduring beauty of shared experiences.</p>
+           
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    <footer>
+        <center>
+            <p>&copy; 2024 AYUNII bittersweetsoul. All Rights Reserved.</p>
+        </center>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        var i = 0;
+        var txt = 'Just as eyes are often considered windows to the soul, the name Ayunii suggests a person with a soulful presence. This name conveys a sense of grace and empathy, indicating someone who connects deeply with others and sees the world with compassion and understanding.'; /* The text to display */
+        var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        // Scroll to top function
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const gallery = document.querySelector('.grid-container');
+
+  // Add your image URLs here
+  const images = [
+      'image/gallery2.jpg',
+    'image/memory6.jpg',
+    'image/memoryy5.jpg',
+    'image/friend6.jpg',
+    'image/friends.png',
+    'image/memoryy4.jpg',
+    'image/memoryy3.jpg',
+    'image/friend9.jpg',
+    'image/myself4.jpg',
+    'image/school.jpg',
+    'image/sib.jpg',
+    'image/abah.jpg',
+    'image/beach.jpg',
+    'image/brother.jpg',
+    'image/friend.jpg',
+    'image/education.png',
+    'image/friend7.jpg',
+    'image/friend8.jpg',
+    'image/friend10.jpg',
+    'image/friend11.jpg',
+    'image/friend12.jpg',
+    'image/friend13.jpg',
+    'image/friends4.jpg',
+    'image/friends5.jpg',
+    'image/friends6.jpg',
+    'image/friends7.jpg',
+    'image/friends8.jpg',
+    'image/gallery.jpg',
+    'image/ibu.jpg',
+    'image/kopi.jpg',
+    'image/mum.jpg',
+    'image/myself.jpg',
+    'image/myself7.jpg',
+    'image/nature.png',
+    'image/sister.jpg',
+    'image/myself9.jpg',
+    'image/myself10.jpg',
+    'image/myself8.jpg',
+    'image/sunset2.jpg',
+    'image/school8.jpg',
+    'image/family5.jpg',
+    'image/family2.jpg',
+    'image/school10.jpg',
+    'image/crazyppl.jpg',
+    'image/beach2.jpg',
+    'image/abahh.jpg',
+    'image/abg.jpg',
+    'image/anis2.jpg',
+    'image/abahh2.jpg',
+    'image/anis3.jpg',
+    'image/gallery3.jpg',
+    'image/ziyad2.jpg',
+    'image/ibu2.jpg',
+    'image/ibuu.jpg',
+    'image/ibuuu.jpg',
+    'image/ibuuuu.jpg',
+    'image/anis4.jpg',
+    'image/millah2.jpg',
+    'image/millah3.jpg',
+   
+    // Add more image URLs as needed
+  ];
+
+  images.forEach(image => {
+    const gridItem = document.createElement('div');
+    gridItem.classList.add('grid-item');
+
+    const img = document.createElement('img');
+    img.src = image;
+    img.alt = 'Memory Image';
+
+    gridItem.appendChild(img);
+    gallery.appendChild(gridItem);
+  });
+});
+
+
+    </script>
+</body>
+</html>

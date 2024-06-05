@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUNII bittersweetsoul</title>
+    <link rel="stylesheet" href="styles.css">
+     <style>
+        #topButton {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* 20px from the bottom */
+            right: 30px; /* 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #555; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #topButton:hover {
+            background-color: #000; /* Darker background on hover */
+        }
+    </style>
+
+</head>
+
+
+<body>
+     <header>
+        <nav>
+            <div class="logo">
+                 <a href="index.html"><img src="image/header.png" width="100%" height="65%" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <center>
+                    <a href="home.html">Home</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="education.html">Education</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">More
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="family.html">Family</a>
+                            <a href="friends.html">Friends</a>
+                            <a href="unifriends.html">University Friends</a>
+                            <a href="things.html">Things that I likes</a>
+                            <a href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<section class="video-section">
+        <h3 align="center">"Sunsets, like childhood, are viewed with wonder not just because they are beautiful but because they are fleeting." — Richard Paul Evans</h3>
+<center>
+        <video width="1000" controls>
+            <source src="video/healing.mp4" type="video/mp4">
+            
+        </video>
+    </section>
+</center>
+</center>
+<center>
+    <h1>Sneak Peek about Ayunii!</h1>
+
+    <button onclick="typeWriter()">Click ME</button>
+
+    <p id="demo"></p>
+</center>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About AYUNII</h1>
+            <p>I enjoy the peace and quiet of nature, as well as the simplicity of peaceful times. I have an intense love for quiet vibes and frequently seek out calming locations where I can recharge and reflect on. One of my favourite pleasures is photographing the beauty of the world around me, particularly stunning places that inspire a sense of serenity and admiration. The sound and sight of rain have never disappointed me, and I frequently make recordings of rainy days to capture the relaxing atmosphere they create. My appreciation for these peaceful, thoughtful times is a crucial component of who I am, impacting both my activities and my perspective on life. </p>
+
+       <p>Ayu is someone who thrives in serene environments. Preferring the gentle hum of silence over the chaos of loud crowds, Ayu finds solace in moments of peace and tranquility. This aversion to noise extends to people as well—Ayu steers clear of toxic and manipulative individuals, valuing genuine and straightforward relationships. </p>
+
+<p>Rainy days hold a special charm for Ayu. The rhythmic patter of rain against the window and the fresh, earthy scent that follows a downpour bring a sense of calm and contentment. It's during these moments that Ayu feels most inspired, often grabbing a phone camera to capture the beauty of the rain-soaked world. The sight of raindrops clinging to leaves, the way puddles reflect the sky, and the gentle, muted colors of a rainy day are all scenes Ayu loves to record. </p>
+
+<p>While Ayu appreciates the simplicity and quiet beauty of nature, there's also a sweet side. Sometimes, indulging in a treat brings a simple joy—a piece of soft cookie, a slice of cake, or a scoop of ice cream. These small pleasures add a touch of sweetness to life's calm moments.</p>
+
+<p>In essence, Ayu is a person who finds beauty in stillness, values authenticity, and delights in the small, often overlooked wonders of the world. Whether it’s a rainy afternoon or a quiet evening, Ayu embraces these moments with a thoughtful and observant heart. </p>
+
+
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    <footer>
+        <center>
+            <p>&copy; 2024 AYUNII bittersweetsoul. All Rights Reserved.</p>
+        </center>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        var i = 0;
+        var txt = 'Just as eyes are often considered windows to the soul, the name Ayunii suggests a person with a soulful presence. This name conveys a sense of grace and empathy, indicating someone who connects deeply with others and sees the world with compassion and understanding.'; /* The text to display */
+        var speed = 60; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+       
+// Toggle video play/pause
+        function toggleVideo() {
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("pauseButton");
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+                video.pause();
+                btn.innerHTML = "Play";
+            }
+        }
+
+        // Scroll to top function
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+// Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+    </script>
+
+</body>
+</html>

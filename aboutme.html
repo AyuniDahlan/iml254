@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUNII bittersweetsoul</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+        #topButton {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* 20px from the bottom */
+            right: 30px; /* 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #555; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #topButton:hover {
+            background-color: #000; /* Darker background on hover */
+        }
+    </style>
+
+</head>
+<body bgcolor="FEFCF3">
+     <header>
+        <nav>
+            <div class="logo">
+                 <a href="index.html"><img src=image/header.png width="100%" height="65%" alt="logo"></a>
+              <body> 
+
+ 
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="education.html">Education</a>
+  <div class="dropdown">
+    <button class="dropbtn">More
+      <i class="fa fa-caret-down"></i>
+    </button>
+                            <div class="dropdown-content">
+                            <a href="family.html">Family</a>
+                            <a href="friends.html">Friends</a>
+                            <a href="unifriends.html">University Friends</a>
+                            <a href="things.html">Things that I likes</a>
+                            <a href="gallery.html">Gallery</a>
+
+
+    </div>
+  </div>
+</div>
+
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+<center>
+        <section class="video-section">
+            <h3 align="center">Let's Watch Some Video About AYUNII</h3>
+            <p>"Every chapter of my life adds depth to the story of who I am."</p>
+            <video width="1000" controls>
+                <source src="video/myself.mp4" type="video/mp4">
+            </video>
+        </section>
+    </center>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About me</h1>
+            <p>Ayunii is a peaceful and considerate person who seeks comfort in quiet places and the delicate beauty of rainy days. They have a strong eye for catching the world's hidden excites, frequently photographing stunning scenery and the soothing rhythm of rain. Ayunii highlights genuineness and kindness, avoiding toxic and manipulative people. Ayunii, who has a sweet cravings and at times takes part in amazing treats, mixes a love of nature's peace with moments of simple joy, representing a beautiful combination of calm and genuine kindness.</p>
+
+            <p>Ayunii is a quiet and quiet person who thrives in peaceful situations where they can appreciate the quiet beauty of their surroundings. With a great passion for rainy days, Ayunii takes satisfaction in the rhythmic fall of rain and frequently records these moments via photography, preserving peaceful and lovely views that others may miss. They respect sincerity and empathy, making an intentional choice to avoid toxic and manipulative individuals and instead surround oneself with real, good influences. Despite their peaceful and thoughtful attitude, Ayunii has a playful side and enjoys delicious sweets that deliver simple yet profound delight. Ayunii has a unique combination of quiet respect for nature, a love for photographing beauty, and a discriminating yet sweet-hearted.</p>
+
+            <p>Ayunii is a name that conveys elegance and depth, indicating a soft yet deep personality. Those with the name Ayunii often show warmth and compassion, which naturally attracts others. As the name suggests, Ayunii has a clear and imaginative viewpoint on life, able to see past the surface to understand the complexities of the world around them. This name has a musical character, signifying someone who brings peace and beauty into the lives of others, similar to a calming tune.</p>
+
+            <p>As an Ayunii, you most likely have a natural capacity to connect with others on a personal level, providing comfort and understanding to those in need. Your name, which means "my eyes" or "my dearest" in Arabic, highlights your importance as a treasured and important presence in the lives of your loved ones. You have a special combination of uniqueness and cultural depth that identifies you while also connecting closely with others around you. With a name like Ayunii, you show warmth and empathy that creates a lasting impact, making you a beloved friend, an adored family member, and an inspirational individual.</p>
+
+
+        </div>
+    </section>
+<center>            
+<section class="Myself">
+    <h2>This is ME: AYUNII!</h2>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="image/myself.jpg" style="width:65%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="image/myself7.jpg" style="width:65%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="image/myself3.jpg" style="width:65%">
+  </div>
+
+  <br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    
+
+        </div>
+    </section>
+</center>
+   <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    <footer>
+<center>
+        <p>&copy; 2024 AYUNII bittersweetsoul. All Rights Reserved.</p>
+</center>
+    </footer>
+
+
+    <script src="scripts.js"> 
+// Scroll to top function
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+// Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+    </script>
+</body>
+</html>

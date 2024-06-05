@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUNII bittersweetsoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #topButton {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* 20px from the bottom */
+            right: 30px; /* 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #555; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #topButton:hover {
+            background-color: #000; /* Darker background on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="image/header.png" width="100%" height="65%" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <center>
+                    <a href="home.html">Home</a>
+                    <a href="aboutme.html">About Me</a>
+                    <a href="education.html">Education</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">More
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="family.html">Family</a>
+                            <a href="friends.html">Friends</a>
+                            <a href="unifriends.html">University Friends</a>
+                            <a href="things.html">Things that I likes</a>
+                            <a href="gallery.html">Gallery</a>
+                        </div>
+                    </div>
+                </center>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="video-section">
+        <h3 align="center">"To escape and sit quietly on the beach — that’s my idea of paradise." – Emilia Wickstead</h3>
+        <center>
+            <video width="1000" controls>
+                <source src="video/things.mp4" type="video/mp4">
+            </video>
+        </center>
+    </section>
+    
+   
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Things that I liked to do</h1>
+            <p>Capturing the fleeting beauty of a stunning setting resembles to capturing a priceless moment stuck in time. As the sun slowly touches the land, painting the sky in colours of warmth, the water reflects its beauty, providing a beautiful view that covers as far as the eye can see. The clouds, like fluffy cotton candy, wander lazily across the blue canvas, lending depth and complexity to the ever moving scene. Along the beautiful beach, the rhythmic music of the waves blends with the soothing rustling of palm trees to create a natural symphony that calms the mind and soul.</p>
+
+        </div>
+    </section>
+<center>
+ <section class="things">
+    <h2>Scenery that I take by my own</h2>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 7</div>
+    <img src="image/sunset.jpg" style="width:50%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 7</div>
+    <img src="image/cloud3.jpg" style="width:50%">
+      </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 7</div>
+    <img src="image/sky.jpg" style="width:50%">
+      </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 7</div>
+    <img src="image/kopi.jpg" style="width:50%">
+     </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">5 / 7</div>
+    <img src="image/sea.jpg" style="width:50%">
+  </div>
+  
+   <div class="mySlides fade">
+    <div class="numbertext">6 / 7</div>
+    <img src="image/sunset4.jpg" style="width:50%">
+      </div>
+ 
+   <div class="mySlides fade">
+    <div class="numbertext">7 / 7</div>
+    <img src="image/pink.jpg" style="width:50%">
+  </div>
+</center>
+   
+ 
+
+ <br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+</div>
+
+</center>
+<br></br>
+    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    <footer>
+        <center>
+            <p>&copy; 2024 AYUNII bittersweetsoul. All Rights Reserved.</p>
+        </center>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        // Scroll to top function
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

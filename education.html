@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYUNII bittersweetsoul</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #topButton {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 20px; /* 20px from the bottom */
+            right: 30px; /* 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #555; /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        #topButton:hover {
+            background-color: #000; /* Darker background on hover */
+        }
+    </style>
+</head>
+<body bgcolor="FEFCF3">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="image/header.png" width="100%" height="65%" alt="logo"></a>
+            </div>
+            <div class="navbar">
+                <a href="home.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="education.html">Education</a>
+                <div class="dropdown">
+                    <button class="dropbtn">More
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="family.html">Family</a>
+                        <a href="friends.html">Friends</a>
+                        <a href="unifriends.html">University Friends</a>
+                        <a href="things.html">Things that I likes</a>
+                        <a href="gallery.html">Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<center>
+        <section class="video-section">
+            <h3 align="center">Watch My School Memories Video</h3>
+            <video width="1000" controls>
+                <source src="video/friends.mp4" type="video/mp4">
+            </video>
+        </section>
+    </center>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>My Education</h1>
+            <p>Sekolah Menengah Kebangsaan Saujana Utama, or SMKSU, was my school for five years, from Form One to Form Five. My name is Ayuni, and I have several memories of my time at SMKSU. These events had a huge impact on me, and I remember them fondly and with thankfulness. The educational environment was both caring and challenging, creating an ideal balance for personal and learning.</p>
+
+            <p>One of the most memorable experiences happened in Form 5. This year was highlighted by unusual challenges caused by the Coronavirus pandemic. The school has strong Standard Operating Procedures (SOPs) to protect the safety and well being of all students and staff. These precautions included wearing face masks, keeping a safe distance, and practicing good hygiene. Despite these limits, the school maintained a strong feeling of community and support.</p>
+
+            <p>Going to school at this period was an unforgettable one. Every day, we had to deal with an unfamiliar routine, which included regular temperature checks and hand sanitizing stations located around the school. The administration and teachers worked diligently to adjust to these changes while ensuring the quality of our education. Their efforts were very remarkable, and we felt protected and cared for.</p>
+
+            <p>Finishing my last examination paper, the economics subject, was a very memorable experience. The satisfaction and excitement of finishing my examinations was overwhelming. Following the examinations, my friends and I took advantage of the chance to capture our final days of school by photographing and filming our teachers. These experiences were valuable because they allowed us to build lasting recollections that we could look back on in the future, especially when we all parted ways.</p>
+
+            <p>The picture and video sessions were full with laughter and a feeling of nostalgia. We knew it was the end of an important chapter in our life, so we wanted to make the most of it. The memories also included the teachers who had served as leaders and mentors for us. Their commitment and support had been crucial throughout the years, and it was great to spend these final moments with them.</p>
+
+            <p>I am really grateful to SMKSU for always improving the classroom environment. The changes enabled us to study in a nice and conducive environment, which was particularly important during such difficult circumstances. The administration's effort to offering the greatest facilities was not forgotten and was well appreciated by all of the students. The new facilities and additions drastically enhanced our learning experience.</p>
+
+            <p>The school's attempts to maintain a high level of education and a safe atmosphere were genuinely admirable. Despite the pandemic, they were able to establish an environment in which we could continue our work with minimum change. This drive and adaptability are what set SMKSU apart as an extraordinary institution. The school's support system provided us with trust and hope as we faced difficult circumstances.</p>
+
+            <p>Finally, I'd want to offer my deepest gratitude to my friends. Some of my most treasured recollections are from the times we spent together. Our friendship and the events we had have had a lasting impact on me. I will always appreciate the time I spent with my SMKSU friends, who made my school years extremely memorable. These friendships helped shape who I am now and will always have a special place in my heart.</p>
+        </div>
+    </section>
+       <section class="Memory of 5 FITRAH">
+        <img src="image/education2.png" alt="Memory of 5 FITRAH" style="width: 100%; height: auto;">
+    </section>
+    <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+    <footer>
+        <center>
+            <p>&copy; 2024 AYUNII bittersweetsoul. All Rights Reserved.</p>
+        </center>
+    </footer>
+    <script>
+        // Scroll to top function
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+
+        // Show the button when the user scrolls down 20px from the top of the document
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            var topButton = document.getElementById("topButton");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        }
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
